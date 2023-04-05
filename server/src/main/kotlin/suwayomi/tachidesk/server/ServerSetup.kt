@@ -8,7 +8,7 @@ package suwayomi.tachidesk.server
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import eu.kanade.tachiyomi.App
+import com.jramberger.novelkeeper.App
 import mu.KotlinLogging
 import org.kodein.di.DI
 import org.kodein.di.conf.global
@@ -29,5 +29,5 @@ fun applicationSetup() {
     // Load Android compatibility dependencies
     AndroidCompatInitializer().init()
     // start app
-    androidCompat.startApp(App())
+    androidCompat.startApp(com.jramberger.novelkeeper.App())
 }
